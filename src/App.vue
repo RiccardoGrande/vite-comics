@@ -1,6 +1,9 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppContent from './components/AppContent.vue'
+import AppLinks from './components/AppLinks.vue'
+import AppInfo from './components/AppInfo.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
 
@@ -8,8 +11,10 @@ export default {
 
   components: {
     AppHeader,
-    AppContent
-
+    AppContent,
+    AppLinks,
+    AppInfo,
+    AppFooter
   }
 
 }
@@ -22,14 +27,15 @@ export default {
   <main>
     <AppContent></AppContent>
 
-    <div class="container">
-      <div class="row">
-        <div class="col"></div>
-      </div>
-    </div>
+    <AppLinks></AppLinks>
+
+    <AppInfo></AppInfo>
+
 
   </main>
-  <footer></footer>
+  <footer>
+    <AppFooter></AppFooter>
+  </footer>
 </template>
 
 <style scoped lang="scss"></style>
