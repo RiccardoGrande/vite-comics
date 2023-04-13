@@ -1,38 +1,35 @@
 <script>
+import AppHeader from './components/AppHeader.vue'
+import AppContent from './components/AppContent.vue'
+
+export default {
+
+  name: 'App',
+
+  components: {
+    AppHeader,
+    AppContent
+
+  }
+
+}
 
 </script>
 
 <template>
-  <header>
+  <AppHeader></AppHeader>
+
+  <main>
+    <AppContent></AppContent>
+
     <div class="container">
-      <nav>
-        <row>
-          <div class="col">
-          </div>
-          <div class="col">
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-            <span>lorem</span>
-          </div>
-
-
-        </row>
-
-      </nav>
-
+      <div class="row">
+        <div class="col"></div>
+      </div>
     </div>
 
-
-  </header>
-  <main></main>
+  </main>
   <footer></footer>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
