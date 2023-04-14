@@ -155,6 +155,11 @@ export default {
     .row {
         flex-wrap: nowrap;
 
+        .col {
+
+            padding: 1rem;
+        }
+
         .col-8 {
             background-image: url('../assets/img/dc-logo-bg.png');
             background-position: center;
@@ -162,11 +167,13 @@ export default {
         }
 
         h4 {
-            color: #ffff
+            color: #ffff;
+
         }
 
         div {
             color: grey;
+
         }
     }
 }

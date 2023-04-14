@@ -61,6 +61,8 @@ export default {
             border: 2px blue solid;
             color: #ffff;
 
+
+
         }
 
         span {

@@ -65,11 +65,12 @@ export default {
 }
 
 .container {
-
+    padding: 1rem;
 
 
     img {
         height: 60px;
+        padding: 10px;
     }
 
     span {
