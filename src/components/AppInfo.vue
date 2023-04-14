@@ -77,60 +77,63 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col" v-for="item in info_1">
-                <h4>{{ item.title }}</h4>
-                <div>{{ item.text_1 }}</div>
-                <div>{{ item.text_2 }}</div>
-                <div>{{ item.text_3 }}</div>
-                <div>{{ item.text_4 }}</div>
-                <div>{{ item.text_5 }}</div>
-                <div>{{ item.text_6 }}</div>
-                <div>{{ item.text_7 }}</div>
+    <div class="background">
+
+        <div class="container">
+            <div class="row">
+                <div class="col" v-for="item in info_1">
+                    <h4>{{ item.title }}</h4>
+                    <div>{{ item.text_1 }}</div>
+                    <div>{{ item.text_2 }}</div>
+                    <div>{{ item.text_3 }}</div>
+                    <div>{{ item.text_4 }}</div>
+                    <div>{{ item.text_5 }}</div>
+                    <div>{{ item.text_6 }}</div>
+                    <div>{{ item.text_7 }}</div>
 
 
-            </div>
-            <div class="col" v-for="item in info_2">
-                <h4>{{ item.title }}</h4>
-                <div>{{ item.text_1 }}</div>
-                <div>{{ item.text_2 }}</div>
-                <div>{{ item.text_3 }}</div>
-                <div>{{ item.text_4 }}</div>
-                <div>{{ item.text_5 }}</div>
-                <div>{{ item.text_6 }}</div>
-                <div>{{ item.text_7 }}</div>
-                <div>{{ item.text_8 }}</div>
-                <div>{{ item.text_9 }}</div>
-                <div>{{ item.text_10 }}</div>
+                </div>
+                <div class="col" v-for="item in info_2">
+                    <h4>{{ item.title }}</h4>
+                    <div>{{ item.text_1 }}</div>
+                    <div>{{ item.text_2 }}</div>
+                    <div>{{ item.text_3 }}</div>
+                    <div>{{ item.text_4 }}</div>
+                    <div>{{ item.text_5 }}</div>
+                    <div>{{ item.text_6 }}</div>
+                    <div>{{ item.text_7 }}</div>
+                    <div>{{ item.text_8 }}</div>
+                    <div>{{ item.text_9 }}</div>
+                    <div>{{ item.text_10 }}</div>
 
 
-            </div>
-            <div class="col" v-for="item in info_3">
-                <h4>{{ item.title }}</h4>
-                <div>{{ item.text_1 }}</div>
-                <div>{{ item.text_2 }}</div>
-                <div>{{ item.text_3 }}</div>
-                <div>{{ item.text_4 }}</div>
-                <div>{{ item.text_5 }}</div>
-
-
-
-
-
-            </div>
-            <div class="col" v-for="item in info_4">
-                <h4>{{ item.title }}</h4>
-                <div>{{ item.text_1 }}</div>
-                <div>{{ item.text_2 }}</div>
+                </div>
+                <div class="col" v-for="item in info_3">
+                    <h4>{{ item.title }}</h4>
+                    <div>{{ item.text_1 }}</div>
+                    <div>{{ item.text_2 }}</div>
+                    <div>{{ item.text_3 }}</div>
+                    <div>{{ item.text_4 }}</div>
+                    <div>{{ item.text_5 }}</div>
 
 
 
-            </div>
 
-            <div class="col-8">
-                <img src="../assets/img/dc-logo-bg.png" alt="">
 
+                </div>
+                <div class="col" v-for="item in info_4">
+                    <h4>{{ item.title }}</h4>
+                    <div>{{ item.text_1 }}</div>
+                    <div>{{ item.text_2 }}</div>
+
+
+
+                </div>
+
+                <div class="col-8">
+
+
+                </div>
             </div>
         </div>
     </div>
@@ -139,11 +142,32 @@ export default {
 
 
 <style lang="scss" scoped>
+.background {
+
+    background-image: url('../assets/img/footer-bg.jpg');
+    background-size: cover;
+
+}
+
 .container {
-    background-color: rgb(217, 117, 41);
+
 
     .row {
         flex-wrap: nowrap;
+
+        .col-8 {
+            background-image: url('../assets/img/dc-logo-bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h4 {
+            color: #ffff
+        }
+
+        div {
+            color: grey;
+        }
     }
 }
 </style>
