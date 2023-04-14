@@ -7,27 +7,27 @@ export default {
             links: [
                 {
                     text: 'DIGITAL COMICS',
-                    img: 'https://i0.wp.com/www.comicon.com/wp-content/uploads/2020/04/BATMAN-GOTHAM-NIGHTS-1_5e9dd8c96bfe20.09849239.jpg?resize=390%2C600'
+                    img: '../img/aquietplace.jpeg'
 
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    img: 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/06/Page-1.jpg'
+                    img: '../img/aquietplace.jpeg'
 
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    img: 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/06/Page-1.jpg'
+                    img: '../img/aquietplace.jpeg'
 
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    img: 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/06/Page-1.jpg'
+                    img: '../img/aquietplace.jpeg'
 
                 },
                 {
                     text: 'DC POWER VISA',
-                    img: 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/06/Page-1.jpg'
+                    img: '../img/aquietplace.jpeg'
 
                 }
             ]
