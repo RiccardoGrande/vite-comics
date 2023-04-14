@@ -102,6 +102,10 @@ header {
     text-align: center;
 }
 
+img {
+    padding: 1rem;
+}
+
 
 
 
@@ -109,6 +113,8 @@ a {
     text-decoration: none;
     font-size: 12px;
     padding: 0 1rem;
+    color: rgb(57, 57, 57);
+    font-weight: bolder;
 
 }
 </style>

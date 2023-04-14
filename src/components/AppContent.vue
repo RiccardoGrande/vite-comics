@@ -19,21 +19,29 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col" v-for="item in content">
-                <h1>{{ item.text }}</h1>
+    <div class="background">
+        <div class="container">
+            <div class="row">
+                <div class="col" v-for="item in content">
+                    <h1>{{ item.text }}</h1>
+                </div>
             </div>
         </div>
+
     </div>
 </template>
 
 
 
 <style lang="scss" scoped>
-.container {
-    max-width: 100%;
+.background {
     background-color: rgb(0, 0, 0);
+
+}
+
+.container {
+
+
 
     h1 {
         color: #ffff;
