@@ -4,6 +4,10 @@ export default {
     name: 'AppContent',
     data() {
         return {
+            content: [
+                {
+                    text: '<-- Content goes here -->'
+                }]
 
         }
 
@@ -17,8 +21,8 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <span>Contents</span>
+            <div class="col" v-for="item in content">
+                <h1>{{ item.text }}</h1>
             </div>
         </div>
     </div>
@@ -28,6 +32,11 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    background-color: rgb(20, 82, 15);
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+
+    h1 {
+        color: #ffff;
+    }
 }
 </style>
