@@ -77,7 +77,7 @@ export default {
                         <img src="../assets/img/dc-logo.png" alt="dc_logo">
 
                     </div>
-                    <div class="col-4 d-flex justify-content-center">
+                    <div class="col-8 d-flex justify-content-center align-items-center">
                         <a :href="item.src" v-for="item in banner">{{ item.text }}</a>
 
 
@@ -98,18 +98,17 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    background-color: aquamarine;
+
     text-align: center;
 }
 
-.container {
-    background-color: aqua;
 
-    a {
-        text-decoration: none;
-        font-size: 12px;
-        padding: 1rem;
 
-    }
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0 1rem;
+
 }
 </style>
