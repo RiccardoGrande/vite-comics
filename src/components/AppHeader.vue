@@ -3,7 +3,61 @@
 export default {
     name: 'AppHeader',
     data() {
+
         return {
+
+            banner: [
+                {
+                    text: 'CHARACTERS',
+                    src: '#'
+
+                },
+                {
+                    text: 'COMICS',
+                    src: '#'
+
+                },
+                {
+                    text: 'MOVIES',
+                    src: '#'
+
+                },
+                {
+                    text: 'TV',
+                    src: '#'
+
+                },
+                {
+                    text: 'GAMES',
+                    src: '#'
+
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    src: '#'
+
+                },
+                {
+                    text: 'VIDEOS',
+                    src: '#'
+
+                },
+                {
+                    text: 'FANS',
+                    src: '#'
+
+                },
+                {
+                    text: 'NEWS',
+                    src: '#'
+
+                },
+                {
+                    text: 'SHOP',
+                    src: '#'
+
+                }
+            ]
 
         }
 
@@ -16,22 +70,17 @@ export default {
 
 <template>
     <header>
-        <div class="debug container">
+        <div class="container">
             <nav>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="../assets/img/dc-logo.png" alt="dc_logo">
+
                     </div>
-                    <div class="col">
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
-                        <span>lorem</span>
+                    <div class="col-4 d-flex justify-content-center">
+                        <a :href="item.src" v-for="item in banner">{{ item.text }}</a>
+
+
                     </div>
 
 
@@ -50,9 +99,17 @@ export default {
 <style lang="scss" scoped>
 header {
     background-color: aquamarine;
+    text-align: center;
 }
 
 .container {
     background-color: aqua;
+
+    a {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 1rem;
+
+    }
 }
 </style>
