@@ -25,13 +25,8 @@ export default {
         <div class="container">
             <h3>Current Series</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-3 row-cols-xxl-6">
-                <div class="col" v-for="comic in comics">
-                    <div class="comic">
-                        <img class="img-fluid" :src="comic.thumb" alt="">
-                        <h5>{{ comic.series }}</h5>
-                    </div>
+                <AppComic :comic="comic" v-for="comic in comics"></AppComic>
 
-                </div>
             </div>
         </div>
 
@@ -55,7 +50,7 @@ export default {
 
 
 
-    h1 {
+    h3 {
         color: #ffff;
     }
 }
