@@ -1,6 +1,6 @@
 
 <script>
-import { comics } from '../comics.js'
+import comics from '../comics.js'
 export default {
     name: 'AppContent',
     data() {
@@ -25,8 +25,11 @@ export default {
         <div class="container">
             <h3>Current Series</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-3 row-cols-xxl-6">
-                <div class="col" v-for="item in content">
-                    <div class="comic"></div>
+                <div class="col" v-for="comic in comics">
+                    <div class="comic">
+                        <img class="img-fluid" :src="comic.thumb" alt="">
+                        <h5>{{ comic.series }}</h5>
+                    </div>
 
                 </div>
             </div>
