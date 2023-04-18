@@ -2,7 +2,7 @@
 export default {
     name: 'AppComic',
     props: {
-        comic: object
+        comic: Object
     }
 
 }
@@ -21,4 +21,12 @@ export default {
 
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+    aspect-ratio: 1/1;
+}
+
+h5 {
+    color: #fff;
+}
+</style>

@@ -1,11 +1,16 @@
 
 <script>
 import comics from '../comics.js'
+import AppComic from '../components/AppComic.vue'
 export default {
     name: 'AppContent',
+    components: {
+        AppComic
+    },
     data() {
         return {
             comics,
+
 
 
         }
